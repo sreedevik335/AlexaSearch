@@ -1,0 +1,12 @@
+﻿@{
+    //var item=Sitecore.Context.Database.GetItem("/sitecore/content/Sitecoreblog/SiteSetting/SiteSetting");
+    var item = Sitecore.Context.Database.GetItem("{EBB960FB-ACC5-4C4B-8792-CF5789A5E7DA}");
+}
+<Footer>
+    <div class="container">
+        <div class="text-while bg-primary">
+            <p class="lead">@Html.Sitecore().Field("Copyright",item)</p>
+            </div>
+        </div>
+    </Footer>
+
